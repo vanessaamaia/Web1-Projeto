@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import PreMatriculaPage from './pages/PreMatriculaPage/PreMatriculaPage';
+import HomePage from './pages/HomePage/HomePage';
+import HorarioAulasPage from './pages/HorarioAulasPage/HorarioAulasPage';
+import Footer from './pages/Footer/Footer.js';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="App-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/horario-aulas" element={<HorarioAulasPage />} />
+            <Route path="/pre-matricula" element={<PreMatriculaPage />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

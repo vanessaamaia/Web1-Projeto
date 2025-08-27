@@ -1,0 +1,21 @@
+.tabela-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.tabela-horarios th, .tabela-horarios td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-horarios th {
+    background-color: #3cb371;
+    color: #fff;
+}
+
+.tabela-horarios tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

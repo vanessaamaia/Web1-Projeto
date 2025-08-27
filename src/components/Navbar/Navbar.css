@@ -1,0 +1,38 @@
+.cabecalho {
+    width: 100%;
+    background-color: #3cb371;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-navegacao {
+    text-align: center;
+}
+
+.lista-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lista-links .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.lista-links .nav-link:hover {
+    color: #FFD700;
+}
+
+.lista-links .nav-link.active {
+    color: #FFD700;
+}
